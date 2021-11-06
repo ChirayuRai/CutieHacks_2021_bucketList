@@ -4,39 +4,52 @@
         <meta charset="UTF8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="categories.css">
         <title>Bucketlist</title>
     </head>
     <body class="bg-blue-700">
 
         <h4>Categories</h4>
-        <h5>Most popular activies recommended for students, by students.
+        <h5>Most popular activies recommended for students, by students.</h5>
             
         <div class="container">
             <input width="200" height="300"
             class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded"
             type="image" src="entertainment.jpg"
-            value="Return to homepage" onclick="toHome();"/>
+            value="Return to homepage" onclick="toPage('index.html');"/>
+            <!--Edit page change when it is created-->
+            <div class="absolute w-full py-2.5 inset-x-20 text-white">Entertainment</div>
+            <!--Text not aligned-->
 
             <input width="200" height="300"
             class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded"
             type="image" src="foodie.jpg"
-            value="Return to homepage" onclick="toHome();"/>
+            value="Return to homepage" onclick="toPage('index.html');"/>
+            <!--Edit page change when it is created-->
+            <div class="absolute w-full py-2.5 inset-x-60 text-white">Foodie</div>
+            <!--Text not aligned-->
 
             <input width="200" height="300"
             class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded"
             type="image" src="active.jpg"
-            value="Return to homepage" onclick="toHome();"/>
+            value="Return to homepage" onclick="toPage('index.html');"/>
+            <!--Edit page change when it is created-->
+            <div class="absolute w-full py-2.5 inset-x-70 text-white">Active</div>
+            <!--Text not aligned-->
 
             <input width="200" height="300"
             class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded"
             type="image" src="shopping.jpg"
-            value="Return to homepage" onclick="toHome();"/>
+            value="Return to homepage" onclick="toPage('index.html');"/>
+            <!--Edit page change when it is created-->
+            <div class="absolute w-full py-2.5 inset-x-120 text-white">Shopping</div>
+            <!--Text not aligned-->
         </div>
 
         <script>
-            function toHome() {
-                window.location.href = 'index.html';
+            function toPage(str) {
+                window.location.href = str;
                 return;
             }
         </script>
