@@ -1,16 +1,24 @@
 {
   "name": "cutiehacks_2021",
   "version": "1.0.0",
-  "description": "",
+  "description": "In order to set this up on your machine",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css" : "tailwind build -i src/style.css -o public/style.css"
+    "build:css": "tailwind build -i src/style.css -o public/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^2.2.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChirayuRai/CutieHacks_2021_bucketList.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChirayuRai/CutieHacks_2021_bucketList/issues"
+  },
+  "homepage": "https://github.com/ChirayuRai/CutieHacks_2021_bucketList#readme"
 }
