@@ -27,6 +27,9 @@ module.exports = {
       extend: {
         fontFamily: {
           body: ["Roboto"]
+        },
+        backgroundImage: {
+          'main-splash': "url('/public/img/mainSplash.jpg')",
         }
       }
     }
