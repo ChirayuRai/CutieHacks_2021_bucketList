@@ -11,83 +11,86 @@
 
 <body class="bg-white">
 
-    <div class="">
-        <div style="background-image: url('img/mainSplash.jpg');" class="bg-contain h-3/4 w-full h-screen bg-top bg-no-repeat">
-            <nav class="">
-                <div class="px-3 mx-auto">
-                    <div class="flex justify-between">
-                        
-                        <!-- Logo -->
-                        <div>
-                            <img src="img/logo.png" alt="logo" class="w-1/5">
-                        </div>
-                        
-    
-                        <!-- secondary nav -->
-                        <div class="bg-blue flex items-center space-x-1 rounded ">
-                            <a href="#home" class="px-4 py-1 text-white hover:text-blue-dark nav-link scrollto">Home</a>
-                            <a href="#recommond" class="px-4 py-1 text-white hover:text-blue-dark nav-link scrollto">Recommend</a>
-                            <a href="#about" class="px-4 py-1 text-white hover:text-blue-dark nav-link scrollto">About</a>
+    <div class="grid place-items-center h-screen">
+        <div class="max-w-5xl">
+            <div style="background-image: url('img/mainSplash.jpg');" class="bg-contain h-3/4 w-full bg-top bg-no-repeat">
+                <nav class="">
+                    <div class="px-3 mx-auto">
+                        <div class="flex justify-between">
+                            
+                            <!-- Logo -->
+                            <div>
+                                <img src="img/logo.png" alt="logo" class="w-1/5">
+                            </div>
+                            
+        
+                            <!-- secondary nav -->
+                            <div class="bg-blue flex items-center space-x-1 rounded ">
+                                <a href="#home" class="px-4 py-1 text-white hover:text-blue-dark nav-link scrollto">Home</a>
+                                <a href="#recommond" class="px-4 py-1 text-white hover:text-blue-dark nav-link scrollto">Recommend</a>
+                                <a href="#about" class="px-4 py-1 text-white hover:text-blue-dark nav-link scrollto">About</a>
+                            </div>
                         </div>
                     </div>
+                </nav>
+                
+                <div class="container w-5/12 ml-32 py-64">
+                    <p class="text-center text-5xl font-body font-medium text-white filter drop-shadow-lg">New to socal?</p>
+                    <p class="text-center text-xl font-medium font-body text-white filter drop-shadow-lg">Bucketlist can help you get started</p>
+                    <div class="flex items-center justify-center">
+                        <button class="w-3/5 text-s h-10 my-2 bg-yellow hover:bg-yellow-light hover:text-brown shadow-md text-white font-bold py-2 px-4 rounded">
+                            Looking for places to go
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="w-3/5 my-2 bg-yellow hover:bg-yellow-light hover:text-brown shadow-md text-white font-bold py-2 px-4 rounded">
+                        I have recommendations
+                        </button>
+                    </div>
                 </div>
-            </nav>
-            
-            <div class="container w-5/12 ml-32 py-64">
-                <p class="text-center text-5xl font-body font-medium text-white filter drop-shadow-lg">New to socal?</p>
-                <p class="text-center text-xl font-medium font-body text-white filter drop-shadow-lg">Bucketlist can help you get started</p>
-                <div class="flex items-center justify-center">
-                    <button class="w-3/5 text-s h-10 my-2 bg-yellow hover:bg-yellow-light hover:text-brown shadow-md text-white font-bold py-2 px-4 rounded">
-                        Looking for places to go
-                    </button>
+            </div>
+        
+            <div>
+                <div class="px-9">
+                    <h4><font size="+2"><b>Categories</b></font></h4>
+                    <h5><font size="+1">Most popular activies recommended for students, by students.</font></h5>
                 </div>
-                <div class="flex items-center justify-center">
-                    <button class="w-3/5 my-2 bg-yellow hover:bg-yellow-light hover:text-brown shadow-md text-white font-bold py-2 px-4 rounded">
-                    I have recommendations
-                    </button>
+                <br>
+                <div class="px-5 pb-10 container flex justify-between">
+                    <!--Edit page change when it is created-->
+                    <button value="Return to homepage" onclick="toPage('index.html');"
+                    style="background-image: url('img/entertainment.jpg'); width:175px; height:300px;"
+                    class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
+                    <div style="position:relative; top:130px;">Entertainment</div></button>
+                    
+                    <!--Edit page change when it is created-->
+                    <button value="Return to homepage" onclick="toPage('index.html');"
+                    style="background-image: url('img/foodie.jpg'); width:175px; height:300px;"
+                    class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
+                    <div style="position:relative; top:130px;">Foodie</div></button>
+                    
+                    <!--Edit page change when it is created-->
+                    <button value="Return to homepage" onclick="toPage('index.html');"
+                    style="background-image: url('img/active.jpg'); width:175px; height:300px;"
+                    class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
+                    <div style="position:relative; top:130px;">Active</div></button>
+                    
+                    <!--Edit page change when it is created-->
+                    <button value="Return to homepage" onclick="toPage('index.html');"
+                    style="background-image: url('img/shopping.jpg'); width:175px; height:300px;"
+                    class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
+                    <div style="position:relative; top:130px;">Shopping</div></button>
                 </div>
+        
+                <script>
+                    function toPage(str) {
+                        window.location.href = str;
+                        return;
+                    }
+                </script>
             </div>
         </div>
-    
-        <div>
-            <div class="px-9">
-                <h4><font size="+2"><b>Categories</b></font></h4>
-                <h5><font size="+1">Most popular activies recommended for students, by students.</font></h5>
-            </div>
-            <br>
-            <div class="px-5 pb-10 container flex justify-between">
-                <!--Edit page change when it is created-->
-                <button value="Return to homepage" onclick="toPage('index.html');"
-                style="background-image: url('img/entertainment.jpg'); width:175px; height:300px;"
-                class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
-                <div style="position:relative; top:130px;">Entertainment</div></button>
-                
-                <!--Edit page change when it is created-->
-                <button value="Return to homepage" onclick="toPage('index.html');"
-                style="background-image: url('img/foodie.jpg'); width:175px; height:300px;"
-                class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
-                <div style="position:relative; top:130px;">Foodie</div></button>
-                
-                <!--Edit page change when it is created-->
-                <button value="Return to homepage" onclick="toPage('index.html');"
-                style="background-image: url('img/active.jpg'); width:175px; height:300px;"
-                class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
-                <div style="position:relative; top:130px;">Active</div></button>
-                
-                <!--Edit page change when it is created-->
-                <button value="Return to homepage" onclick="toPage('index.html');"
-                style="background-image: url('img/shopping.jpg'); width:175px; height:300px;"
-                class="bg-cover bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-4 rounded">
-                <div style="position:relative; top:130px;">Shopping</div></button>
-            </div>
-    
-            <script>
-                function toPage(str) {
-                    window.location.href = str;
-                    return;
-                }
-            </script>
-        </div>
+
     </div>
 
     
